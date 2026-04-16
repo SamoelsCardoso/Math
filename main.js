@@ -2,10 +2,41 @@ console.log("adição- 1");
 console.log("subtração- 2");
 console.log("multiplicação- 3");
 console.log("divisão- 4");
-console.log("bhaskara- B");
+console.log("bhaskhara- B");
+console.log("Hipotenusa- H")
+console.log("Voltagem- V")
 let Defdocal = prompt("qual o calculo desejado?(olhar no console para informações das palavras chave para definir as contas)");
 
 switch(Defdocal){
+    case "V":
+        console.log("caso a gbrandeza não exista, deixar 0 no lugar dela.")
+        let Iv = Number(prompt("Digite a corrente do sistema (em Amper)"))
+        let Rv = Number(prompt("Digite a resistência do sistema (em Ohm)"))
+        let Wv = Number(prompt("Digite a potência do sistema"))
+        if (Wv == 0){
+            const V = Rv*Iv
+            console.log("A voltagem é de "+ V)
+        }
+        if (Iv == 0){
+            const V = Math.sqrt(Wv*Rv)
+            console.log("A voltagem é de "+ V)
+        }
+        if (Rv == 0){
+            const V = Wv/Iv
+            console.log("A voltagem é de "+ V)
+        }
+
+    break;
+    case "H" :
+    let cat1 = Number(prompt("digite o primeiro cateto."))
+    let cat2 = Number(prompt("digite o segundo cateto"))
+    const HIPO = (cat1*cat1)+(cat2*cat2)
+    const HIPOcal = Math.sqrt(HIPO)
+console.log ("a hipotenusa ao quadrado é "+ HIPO)
+console.log("a hipotenusa é "+ HIPOcal)
+
+    break;
+
 case "B" :
 let bhaa = Number(prompt("digite o A da função"));
 let bhab = Number(prompt("digite o B da função"));
