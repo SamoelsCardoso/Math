@@ -8,6 +8,15 @@ console.log("Voltagem- V")
 let Defdocal = prompt("qual o calculo desejado?(olhar no console para informações das palavras chave para definir as contas)");
 
 switch(Defdocal){
+    case"R":
+    resistência
+    break;
+    case "I":
+        amper
+    break;
+    case "P":
+        potencia
+    break;
     case "V":
         console.log("caso a gbrandeza não exista, deixar 0 no lugar dela.")
         let Iv = Number(prompt("Digite a corrente do sistema (em Amper)"))
