@@ -1,3 +1,5 @@
+
+
 console.log("adição- 1");
 console.log("subtração- 2");
 console.log("multiplicação- 3");
@@ -333,4 +335,5 @@ switch (Defdocal) {
 
         alert("a divisão dos números deu" + divres);
         break;
+        
 }
