@@ -25,7 +25,7 @@ switch (Defdocal) {
         console.log("Valor Presente - VP");
         console.log("Valor Futuro - VF");
 
-        let opcao = prompt("Qual cálculo deseja fazer?").toUpperCase();
+        let opcao = prompt("Qual cálculo deseja fazer?");
 
         switch (opcao) {
 
